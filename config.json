@@ -1,0 +1,20 @@
+{
+  "defaults": {
+    "target": "TARGET",
+    "time_column": "Date",
+    "max_vif_features": 50,
+    "analyses": [
+      "profile",
+      "correlation",
+      "heatmap",
+      "ic",
+      "mutual_info",
+      "tree_importance",
+      "vif",
+      "drift",
+      "leakage",
+      "pca"
+    ],
+    "exclude_columns": []
+  }
+}
