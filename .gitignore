@@ -208,3 +208,5 @@ __marimo__/
 
 # my stuff
 /projects
+design_*.xml
+.DS_Store

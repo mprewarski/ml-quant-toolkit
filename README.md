@@ -29,6 +29,33 @@ Regenerate the HTML report without re-running analysis:
 python -m feature_analysis.cli report --project-dir projects/sp500_eda
 ```
 
+## LightGBM Training Toolkit
+
+This toolkit provides modular LightGBM training and validation workflows for
+classification and regression tasks. It supports holdout and rolling time-series
+validation, configurable gaps to prevent leakage, and an HTML report with
+metrics, diagnostics, and plots.
+
+Quick start:
+
+```bash
+python -m lgbm_training.cli train \
+  --data sp500-y17-65.csv \
+  --target TARGET \
+  --time-column Date \
+  --training-length 156 \
+  --holdout-length 26 \
+  --gap 2 \
+  --n-folds 3 \
+  --project-dir projects/sp500_lgbm
+```
+
+Regenerate the HTML report:
+
+```bash
+python -m lgbm_training.cli report --project-dir projects/sp500_lgbm
+```
+
 ## Outputs
 
 - `projects/<name>_eda/meta.json` - analysis configuration.

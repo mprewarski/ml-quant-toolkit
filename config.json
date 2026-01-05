@@ -16,5 +16,24 @@
       "pca"
     ],
     "exclude_columns": []
+  },
+  "lgbm_defaults": {
+    "target": "TARGET",
+    "time_column": "Date",
+    "task": null,
+    "gap": 0,
+    "holdout_length": 26,
+    "training_length": 156,
+    "n_folds": 1,
+    "threshold": 0.5,
+    "exclude_columns": [],
+    "params": {
+      "n_estimators": 200,
+      "learning_rate": 0.05,
+      "num_leaves": 31,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "random_state": 42
+    }
   }
 }
